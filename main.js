@@ -12,7 +12,7 @@ form.addEventListener("submit", (evnt) => {
 });
 
 const validateInput = () => {
-  const usernameValue = username.value;
+  const usernameValue = username.value.trim();
   let success = true;
 
   if (usernameValue === "") {
@@ -22,7 +22,7 @@ const validateInput = () => {
     setSucess(username);
   }
 
-  const emailValue = email.value;
+  const emailValue = email.value.trim();
 
   if (emailValue === "") {
     success = false;
@@ -34,7 +34,7 @@ const validateInput = () => {
     setSucess(email);
   }
 
-  const passwordValue = password.value;
+  const passwordValue = password.value.trim();
 
   if (passwordValue === "") {
     success = false;
@@ -46,7 +46,7 @@ const validateInput = () => {
     setSucess(password);
   }
 
-  const cnfmpasswordValue = cnfmpassword.value;
+  const cnfmpasswordValue = cnfmpassword.value.trim();
 
   if (cnfmpasswordValue === "") {
     success = false;
