@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 500px;
+  background-color: beige;
+  font-size: 20px;
+  border: 2px solid black;
+  box-shadow: 3px 3px 5px black;
+  margin: 5rem auto;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+h1 {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.container {
+  padding: 0.5rem;
+}
+
+.Form__input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+label {
+  margin-bottom: 0.5rem;
+}
+
+input {
+  padding: 0.5rem;
+}
+
+button {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background-color: rgb(2, 199, 2);
+  color: aliceblue;
+}
+
+button:hover {
+  box-shadow: 2px 2px 2px black;
+}
+
+.Form__input .error {
+  color: red;
+}
+
+.Form__input .sucess {
+  color: green;
+}
+.Form__input.error input {
+  border-color: red;
+}
+.Form__input.sucess input {
+  border-color: green;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <h1>Info Form</h1>
+    <div class="container">
+      <form
+        action="https://httpbin.org/post"
+        method="post"
+        id="form"
+        class="form"
+        type
+      >
+        <div class="Form__input">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter Your Name"
+          />
+          <div class="error"></div>
+        </div>
+        <div class="Form__input">
+          <label for="email">Email</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Enter Your Email"
+          />
+          <div class="error"></div>
+        </div>
+        <div class="Form__input">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+          />
+          <div class="error"></div>
+        </div>
+        <div class="Form__input">
+          <label for="cnfmpassword">Confirm Password</label>
+          <input
+            type="password"
+            id="cnfmpassword"
+            name="cnfmpassword"
+            placeholder="Password"
+          />
+          <div class="error"></div>
+        </div>
+        <div class="button">
+          <button type="submit">Login</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
